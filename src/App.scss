@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+$light: #ffffff;
+$grey: #c4ccde;
+$grey-dark: #9da0aa;
+
+.flex{
+  display: flex;
+}
+
+.navBar{
+  background-color: transparent  !important;
+  padding : 1rem 2rem;
+  border-bottom: 1px solid black;
+  height: 3rem;
+  backdrop-filter: blur(0.7rem);
+
+}
+
+.sideBar{
+  width: 14rem;
+  height: calc(100vh - 52px);
+  border-right: 1px solid black;
+  ul{
+    list-style: none;
+    padding: 1rem 2rem;
+    li{
+      margin-bottom: 1rem;
+      a{
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.content{
+  width: 100%;
+}
+
+.navBarLink{
+  text-decoration: none;
+}
